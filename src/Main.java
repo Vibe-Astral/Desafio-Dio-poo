@@ -19,5 +19,12 @@ public class Main {
       mentoria1.setData(LocalDate.now());
       System.out.println(mentoria1);
 
+      Bootcamp bootcamp1 = new Bootcamp();
+      bootcamp1.setNome("java bootcamp");
+      bootcamp1.setDescricao("descricao java");
+      bootcamp1.getConteudos().add(curso1);
+      bootcamp1.getConteudos().add(curso2);
+      bootcamp1.getConteudos().add(mentoria1);
+      
     }
 }
