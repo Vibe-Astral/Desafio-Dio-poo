@@ -1,3 +1,4 @@
+package br.com.desafiopoo.dominio;
 import java.time.LocalDate;
 
 public class Mentoria extends Conteudo {

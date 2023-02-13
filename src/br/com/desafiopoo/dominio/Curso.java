@@ -1,4 +1,4 @@
-
+package br.com.desafiopoo.dominio;
 
 public class Curso extends Conteudo{
    private int cargaHoraria;

@@ -1,4 +1,10 @@
+
 import java.time.LocalDate;
+
+import br.com.desafiopoo.dominio.Bootcamp;
+import br.com.desafiopoo.dominio.Curso;
+import br.com.desafiopoo.dominio.Dev;
+import br.com.desafiopoo.dominio.Mentoria;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,5 +32,11 @@ public class Main {
       bootcamp1.getConteudos().add(curso2);
       bootcamp1.getConteudos().add(mentoria1);
       
+      Dev dev1 = new Dev();
+      dev1.setNome("jorge");
+      dev1.inscreverBootcamp(bootcamp1);
+      dev1.progredir();
+      System.out.println("Conteudos Inscritos"+ dev1.getConteudosinscritos());
+      System.out.println("Conteudos concluidos"+ dev1.getConteudosConcluidos());
     }
 }
